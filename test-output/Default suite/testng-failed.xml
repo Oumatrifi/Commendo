@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.Login_invalid_code_pin">
+      <class name="tests.Création_Site">
         <methods>
+          <include name="CréationSite"/>
           <include name="setup"/>
-          <include name="Testone"/>
         </methods>
-      </class> <!-- tests.Login_invalid_code_pin -->
+      </class> <!-- tests.Création_Site -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
