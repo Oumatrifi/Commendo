@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.Création_Site">
+      <class name="tests.Offline_Control_Mode">
         <methods>
-          <include name="CréationSite"/>
+          <include name="Création_Area"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- tests.Création_Site -->
+      </class> <!-- tests.Offline_Control_Mode -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

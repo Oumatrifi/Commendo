@@ -13,9 +13,9 @@ import org.testng.annotations.Test;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-public class Authentification_valide  {
+public class Offline_Authentification  {
 	
-    AndroidDriver driver;
+    static AndroidDriver driver;
     @BeforeTest
     public void setup(){
 
