@@ -26,7 +26,7 @@ public class Offline_Authentification  {
         caps.setCapability(MobileCapabilityType.DEVICE_NAME, "HUAWEI Y7 Prime 2019");
         caps.setCapability(MobileCapabilityType.UDID, "BVK6R20519013034");
         caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
-        caps.setCapability(MobileCapabilityType.APP, "E:\\Commendo\\CommendoApp.apk");
+        caps.setCapability(MobileCapabilityType.APP, "E:\\Commendo\\Commendo.apk");
         //caps.setCapability(MobileCapabilityType.BROWSER_NAME, "CHROME");
         try {
             driver = new AndroidDriver (new URL("http://127.0.0.1:4723/wd/hub"), caps);
