@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.Offline_Control_Mode">
+      <class name="tests.Offline_Authentification">
         <methods>
-          <include name="CréationSite"/>
-          <include name="Création_Area_Ajout_Device"/>
+          <include name="login"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- tests.Offline_Control_Mode -->
+      </class> <!-- tests.Offline_Authentification -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
