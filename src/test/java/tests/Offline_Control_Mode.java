@@ -11,7 +11,7 @@ public class Offline_Control_Mode extends Offline_Authentification  {
 	
 	 @Test
 	
-public void CréationSite() throws InterruptedException {
+public void Creation_Site() throws InterruptedException {
 	WebElement a = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.Button[1]"));
 	a.click();
 	
@@ -41,7 +41,7 @@ public void CréationSite() throws InterruptedException {
 	 }
 	 
 	  @Test
-public void Création_Area_Ajout_Device() throws InterruptedException {
+public void Creation_Area_Ajout_Device() throws InterruptedException {
     
      WebElement w = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.View"));
      w.click();

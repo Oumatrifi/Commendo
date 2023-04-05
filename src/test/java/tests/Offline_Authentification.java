@@ -52,7 +52,7 @@ public class Offline_Authentification  {
     
     //Login method
     @Test
- public  void login() throws IOException, InterruptedException{
+ public  void Authentification() throws IOException, InterruptedException{
 	
 		Thread.sleep(2000);
 	 
