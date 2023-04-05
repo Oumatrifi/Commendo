@@ -36,9 +36,9 @@ public class Offline_Authentification  {
         DesiredCapabilities caps = new DesiredCapabilities();
         //caps.setCapability("platformName", "ANDROID");
         caps.setCapability(CapabilityType.PLATFORM_NAME, "ANDROID");
-        caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "13");
-        caps.setCapability(MobileCapabilityType.DEVICE_NAME, "Galaxy J4+,");
-        caps.setCapability(MobileCapabilityType.UDID, "6822c6a4");
+        caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "8.1");
+        caps.setCapability(MobileCapabilityType.DEVICE_NAME, "HUAWEI Y7 Prime 2019");
+        caps.setCapability(MobileCapabilityType.UDID, "BVK6R20519013034");
         caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
         caps.setCapability(MobileCapabilityType.APP, "E:\\Commendo\\Commendo.apk");
         //caps.setCapability(MobileCapabilityType.BROWSER_NAME, "CHROME");
@@ -57,7 +57,7 @@ public class Offline_Authentification  {
 		Thread.sleep(2000);
 	 
 		// Start screen recording
-		driver.startRecordingScreen(new AndroidStartScreenRecordingOptions().withVideoSize("1280x720").withTimeLimit(Duration.ofSeconds(100)));	
+		//driver.startRecordingScreen(new AndroidStartScreenRecordingOptions().withVideoSize("1280x720").withTimeLimit(Duration.ofSeconds(100)));	
 		
 		
 WebElement l = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[4]/android.widget.TextView[2]"));
@@ -75,9 +75,9 @@ WebElement h = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayou
 h.click();
 
 
-String video =driver.stopRecordingScreen();
-byte[] decode = Base64.getDecoder().decode(video);
-FileUtils.writeByteArrayToFile(new File("video/androidclip.mp4"), decode);
+//String video =driver.stopRecordingScreen();
+//byte[] decode = Base64.getDecoder().decode(video);
+//FileUtils.writeByteArrayToFile(new File("video/androidclip.mp4"), decode);
 
 
 WebElement f = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.FrameLayout/android.widget.EditText"));
@@ -104,12 +104,12 @@ WebElement z = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayou
 z.click();
 
 
-File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
-String filePath = "C:\\Users\\trifi\\git\\Commendo\\CommendoAutomation\\screenshots\\screenshot.png";
+//String filePath = "C:\\Users\\trifi\\git\\Commendo\\CommendoAutomation\\screenshots\\screenshot.png";
 
 
-FileUtils.copyFile(screenshot, new File(filePath));
+//FileUtils.copyFile(screenshot, new File(filePath));
 
 WebElement k = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.TextView[1]"));
 k.click();
