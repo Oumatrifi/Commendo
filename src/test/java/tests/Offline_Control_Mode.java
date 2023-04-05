@@ -11,7 +11,7 @@ public class Offline_Control_Mode extends Offline_Authentification  {
 	
 	 @Test
 	
-public void Creation_Site() throws InterruptedException {
+public void CreationSite() throws InterruptedException {
 	WebElement a = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.Button[1]"));
 	a.click();
 	
